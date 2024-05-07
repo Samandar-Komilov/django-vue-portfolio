@@ -40,7 +40,14 @@ INSTALLED_APPS = [
 
     # local
     'blog',
+
+    #external
+    'graphene_django',
 ]
+
+GRAPHENE = {
+    "SCHEMA": "blog.schema.schema"
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
