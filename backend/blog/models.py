@@ -38,3 +38,15 @@ class Post(models.Model):
 
     class Meta:
         ordering = ["-publish_date"]
+
+
+# Projects
+
+class Project(models.Model):
+    title = models.CharField(max_length=255, blank=False)
+    subtitle = models.CharField(max_length=500, blank=False)
+    image = models.ImageField(upload_to="projects/images/")
+    description = models.TextField()
+
+    def __str__(self):
+        return self.title

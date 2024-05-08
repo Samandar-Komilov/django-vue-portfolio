@@ -22,3 +22,9 @@ class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title', 'subtitle')}
     date_hierarchy = 'publish_date'
     save_on_top = True
+
+
+@admin.register(models.Project)
+class ProjectAdmin(admin.ModelAdmin):
+    model = models.Project
+    list_display = ('id','title','subtitle')

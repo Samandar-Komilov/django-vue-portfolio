@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+<p class="text-center mt-5 name">Samandar Komilov</p>
+<p class="text-center">20 y.o. Software Developer</p>
+<p class="text-center">Computer Engineering student at <a href="#" style="color: white;">TTPU</a> '25</p>
+
+<div class="social-links text-center">
+    <a href="github.com/Samandar-Komilov" target='blank'>GitHub</a>
+    <a href="linkedin.com/samandar-komilov" target='blank'>Linkedin</a>
+    <a href="t.me/ekzosfera_da" target='blank'>Telegram</a>
+    <a href="leetcode.com/samandar_komilov" target='blank'>LeetCode</a>
+</div>
+
+<style>
+    .name {
+        font-weight: bold;
+        font-size: 3em;
+    }
+</style>
+
+
+{% endblock content %}
+
+{% comment %} 
+<div class="card bg-black fs-3 text-code" data-bs-theme="dark">
+    <div class="card-header">
+      Shell
+    </div>
+    <div class="card-body">
+      <p class="card-text">$ echo fullname</p>
+      <p>Hi, I am Samandar Komilov, 20 y.o. Software Developer from Uzbekistan.</p>
+      <p class="card-text">$ echo nickname</p>
+      <p>You can call me Void Pointer.</p>
+      <a href="#" class="btn btn-danger">About Me</a>
+    </div>
+  </div>
+
+  <style>
+    .card {
+        font-family: Courier New;
+    }
+
+    .text-code {
+        color: #07de00;
+    }
+
+    .text-code:hover {
+        text-shadow: none !important;
+    }
+  </style>
+
+  <script>
+    let i = 0;
+    let commands = ["echo fullname", "echo nickname"];
+    let responses = ["Hi, I am Samandar Komilov, 20 y.o. Software Developer from Uzbekistan.", "You can call me Void Pointer."]
+    let word = 0;
+    let speed = 300;
+
+    function typeWriter() {
+        if (i < txt.length){
+            document.getElementById("demo").innerHTML += commands[word].chatAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+  </script> {% endcomment %}
